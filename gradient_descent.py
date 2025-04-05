@@ -16,13 +16,13 @@ def gradient_descent(a, b, c, d, learning_rate=0.01, epochs=1000):
         x = x - learning_rate * (fx / dfx)  # Update x using the (Newton-Raphson formula w/ Learning Rate) ==> Gradient Descent
     return x
 
-    ```
+    """
       1. fx = How wrong we are (how far from zero).
       2. dfx = How fast fx is changing (slope).
       3. fx / dfx = How much we should adjust x to reduce fx.
       4. learning_rate = Control how big the adjustment is.
       5. x = x - learning_rate * (fx / dfx) = Take a step towards the root.
-    ```
+    """
 
 try:
     a = float(input("Enter the coefficient a (for x^3): "))
